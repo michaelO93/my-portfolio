@@ -1,0 +1,107 @@
+
+#teaze #big_pic {
+    background: #4C5B5C url(../img/teaze/header_bg.jpg) center 0 no-repeat;
+    background-size: 1700px auto;
+}
+
+#teaze .big_logo {
+    display: block;
+    margin: 0 auto 30px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+#teaze .big_image {
+    display: block;
+    padding-top: 10px;
+    margin: 0 0 30px -30px;
+    width: calc(100% + 60px);
+    height: auto;
+}
+
+#teaze .vid_zone {
+    width: calc(100% + 60px);
+    margin: 0 0 20px -30px;
+    padding-top: 10px;
+    display: block;
+    position: relative;
+}
+
+#teaze .ipad {
+    width: 100%;
+    position: relative;
+}
+
+#teaze .ipad .the_ipad {
+    position: relative;
+    z-index: 5;
+    width: 650px;
+    height: auto;
+    margin-left: -15px;
+}
+
+#teaze .ipad .the_vid {
+    position: absolute;
+    width: 514px;
+    height: auto;
+    top: 28px;
+    left: 53px;
+    z-index: 4;
+}
+
+#teaze .iphone {
+    width: 226px;
+    height: 396px;
+    position: absolute;
+    right: -28px;
+    top: 108px;
+    z-index: 7;
+}
+
+#teaze .iphone .the_iphone {
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    height: auto;
+}
+
+#teaze .iphone .the_vid {
+    position: absolute;
+    width: 155px;
+    height: auto;
+    top: 43px;
+    left: 33px;
+    z-index: 4;
+}
+
+.mobile_only {
+    display: none !important;
+}
+
+@media screen and (max-width: 800px) {
+    .mobile_only {
+        display: block !important;
+    }
+
+    #teaze .vid_zone {
+        display: none;
+    }
+}
+
+@media screen and (width: 1024px) and (height: 768px) {
+    .mobile_only {
+        display: block !important;
+    }
+
+    #teaze .vid_zone {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    #teaze #big_pic {
+        background-size: 1600px auto;
+        background-position: 60% 0;
+    }
+}
